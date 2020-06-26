@@ -125,7 +125,7 @@ class QboApi
     end
 
     def build_deactivate(entity, resp)
-      payload = build_update(resp).merge('sparse': true, 'Active': false)
+      payload = build_update(resp).merge(sparse: true, Active: false)
 
       case singular(entity)
       when 'Account', 'Class'
