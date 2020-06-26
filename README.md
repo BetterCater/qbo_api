@@ -1,3 +1,5 @@
+# Changed to work with Ruby 2.1.1
+
 # QboApi
 
 Ruby client for the QuickBooks Online API version 3.
