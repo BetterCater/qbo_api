@@ -14,9 +14,9 @@ class QboApi
       raw_response = attachment_connection.post do |request|
         request.url "#{realm_id}/upload"
         request.body = {
-            'file_metadata_01':
+            file_metadata_01:
                 Faraday::UploadIO.new(StringIO.new(payload.to_json), 'application/json', 'attachment.json'),
-            'file_content_01':
+            file_content_0':
                 Faraday::UploadIO.new(attachment, content_type, file_name)
         }
       end
