@@ -16,7 +16,7 @@ class QboApi
         request.body = {
             file_metadata_01:
                 Faraday::UploadIO.new(StringIO.new(payload.to_json), 'application/json', 'attachment.json'),
-            file_content_0':
+            file_content_01:
                 Faraday::UploadIO.new(attachment, content_type, file_name)
         }
       end
